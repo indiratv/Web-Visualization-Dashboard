@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Defining Header and importing bootstrap functions -->
+<head>
+  <meta charset="UTF-8">
+  <title>Bootstrap Visualization Dashboard</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="hw.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<!-- Defining body -->
+<body>
+
+<!-- Create a Default Navigation Bar -->  
+<!-- Expand Nav bar at lg and shrink at sm -->
+  <nav class="navbar navbar-expand-lg navbar-default">
+<!-- Place everything in container fluid  -->   
+  <div class="container-fluid">
+<!-- Create a Navigation bar header for logo/header text -->
+    <div class="navbar-header" >
+<!-- Create text or image for brand in the header -->
+       <h2><a href="landing.html" class="navbar-brand">Latitude</a>
+       </h2>
+<!-- Add a toggle button to appear at sm for a shrunken navbar -->
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+<!-- Close Navigation bar header class -->
+      </div>
+<!-- Create a list of link for right side of navigation bar -->
+      <ul class="nav navbar-nav navbar-right">
+<!-- Create a drop-down -->
+        <li class="dropdown">
+<!-- Add a hyperlink functionality to drop-down to be clickable -->
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Plots
+          <span class="caret"></span>
+<!-- Create a drop-down menu -->
+          <ul class="dropdown-menu" aria-labelledby="dropdown1">
+<!-- Add options to drop-down menu -->
+            <li> <a href="maxtemp.html">Max Temperature</a></li>
+            <li> <a href="humidity.html">Humidity</a></li>
+            <li> <a href="cloudiness.html">Cloudiness</a></li>
+            <li> <a href="windspeed.html">Wind Speed</a></li>
+<!-- Close drop-down menu list -->
+           </ul> 
+<!-- Close drop-down -->
+        </li>
+<!-- Rest of the links on the nav bar -->
+        <li><a href="comparison.html">Comparision</a></li>
+        <li><a href="data.html">Data</a></li>
+<!-- Close navigation bar list -->
+      </ul>
+<!-- Close Container fluid -->
+  </div>
+<!-- Close Navigation bar -->
+  </nav>
+
+<!-- Create a container class for creating 2 frames - 7/12 and 5/12 -->
+<div class =container>
+<!-- Create first row -->
+<div class = row>
+<!-- Create first frame - 7/12 -->
+  <div class="col-md-7">
+<!-- Create first Panel -->
+      <div class="panel panel-default">
+<!-- Create Panel header for first panel -->
+        <div class="panel-heading">
+              <h3 class="panel-title">Summary</h3>
+<!-- Close Panel heading class -->
+        </div>
+<!-- Create first panel body -->
+        <div class="panel-body">
+          <p>The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, data from the OpenWeatherMap API was used to assemble a dataset on over 500 cities. </p>
+          <p>After assembling the dataset, the Matplotlib library was used to plot the various aspects of the weather vs latitude. Analysis was done to see the how the following parameters change by latitude - temperature, cloudiness, wind speed and humidity.This site provides the source data and visualizations created as part of the analysis as well as explanations and descriptions of any trend and correlations witnessed.</p>
+<!-- Clsoe first panel body -->
+        </div>
+<!-- Close first panel -->
+      </div>
+<!-- Close the 7/12 frame -->
+  </div>
+
+<!-- Create second frame - 5/12 -->
+  <div class="col-md-5">
+<!-- Create second Panel -->
+      <div class="panel panel-default">
+<!-- Create Panel header for second panel -->
+        <div class="panel-heading">
+              <h3 class="panel-title">Visualizations</h3>
+<!-- Close Panel heading class -->
+        </div>
+<!-- Create second panel body -->
+        <div class="panel-body">
+          <div class = container>
+<!-- First row of 2 images -->
+            <div class =row>
+              <div class= "col-md-2">
+                <!-- <p>First Image</p> -->
+                 <a href="maxtemp.html">
+                 <img src="PyWeather\output_12_1.png" alt="maxtemp vs. latitude" width="100%">
+                 </a>
+              </div>
+               <div class= "col-md-2">
+                <!-- <p>Second Image</p> -->
+                <a href="humidity.html">
+                 <img src="PyWeather\output_13_1.png" alt="humidity vs. latitude" width="100%">
+                 </a>
+              </div>
+<!-- End of First row of 2 images -->              
+            </div>
+<!-- Second row of 2 images -->
+            <div class = row>
+               <div class= "col-md-2">
+                <!-- <p>Third Image</p> -->
+                <a href="cloudiness.html">
+                 <img src="PyWeather\output_14_1.png" alt="cloudiness vs. latitude" width="100%">
+               </a>
+               </div>
+               <div class= "col-md-2">
+                <!-- <p>Fourth Image</p> -->
+                <a href="windspeed.html">
+                 <img src="PyWeather\output_15_1.png" alt="windspeed vs latitude" width="100%">
+                 </a>
+               </div>
+<!-- End of Second row of 2 images -->
+            </div>
+<!-- Close container of second panel -->
+          </div>
+<!-- Close second panel body -->
+        </div>
+<!-- Close second panel -->
+      </div>
+<!-- Close the 5/12 frame -->
+  </div>
+
+<!-- Close first row -->
+</div>
+<!-- Close Container  -->
+</div>
+<div class="panel-footer">
+      © Copyright Indira Vadlapatla 2018
+    </div>
+<!-- Closing body -->
+</body>
+<!-- Closing html -->
+</html>

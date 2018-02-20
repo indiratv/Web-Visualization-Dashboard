@@ -1,0 +1,35 @@
+body 
+{
+background-color: lightgray;
+}
+
+.subhead
+{
+font-family: "Times New Roman";  
+font-size: 30px;
+color: #20B2AA; 
+font-weight: bold; 
+}
+.navbar-default .navbar-brand
+{
+font-family: "Times New Roman";  
+font-size: 35px;
+color: #20B2AA; 
+font-weight: bold; 
+}
+
+.panel-title
+{
+font-family: "Times New Roman";  
+font-size: 35px;
+color: #20B2AA; 
+font-weight: bold;
+}
+
+.panel-footer
+{
+background-color: black;
+color: #FFFFFF;
+font-weight: bold;
+text-align: center;
+}
